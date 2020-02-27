@@ -16,6 +16,13 @@
 			<li><a href="/example/session-invalidate-test.do">session invalidate test</a></li>
 		</ul>
 	</li>
+	<li>
+		<h4>리액트</h4>
+		<ul>
+			<li><a href="/react/simpledemo">심플이즈베스트데모</a></li>
+			<li><a href="/??">??</a></li>
+		</ul>
+	</li>
 </ul>
 </body>
 </html>

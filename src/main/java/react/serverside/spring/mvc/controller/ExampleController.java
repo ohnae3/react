@@ -4,11 +4,12 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class ExampleController {
-	@RequestMapping("/example/draw-example.do")
+	@RequestMapping(path = "/example/draw-example.do", method = RequestMethod.GET)
 	public ModelAndView drawExample(ModelAndView mv) {
 		
 		System.out.println("잘 들어 오는군?");
@@ -17,7 +18,7 @@ public class ExampleController {
 		return mv;
 	}
 	
-	@RequestMapping("/example/session-invalidate-test.do")
+	@RequestMapping(path = "/example/session-invalidate-test.do", method = RequestMethod.GET)
 	public ModelAndView sessionInvalidateTest(ModelAndView mv, HttpSession session) {
 		
 		System.out.println("session id: \n" + session.getId());
