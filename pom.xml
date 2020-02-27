@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>noritersand</groupId>
-	<artifactId>springmvc.javaconfig</artifactId>
+	<groupId>ohnae</groupId>
+	<artifactId>react-with-spring</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springmvc-javaconfig Maven Webapp</name>
-	<url>https://github.com/noritersand/springmvc-javaconfig</url>
+	<name>react-with-spring Maven Webapp</name>
+	<url>https://github.com/ohnae3/react-with-spring</url>
 
 	<properties>
 		<encoding>UTF-8</encoding>
@@ -16,11 +16,12 @@
 		<org.springframework-version>5.2.4.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.8.0</org.aspectj-version>
 		<org.slf4j-version>1.7.21</org.slf4j-version>
+		<logback-version>1.2.3</logback-version>
 	</properties>
 
 	<!-- 빌드 -->
 	<build>
-		<finalName>springmvc.javaconfig</finalName>
+		<finalName>react-with-spring</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -62,13 +63,56 @@
 			<version>1.2</version>
 		</dependency>
 
+		<!-- logger -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-access</artifactId>
+			<version>${logback-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>${logback-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.janino</groupId>
+			<artifactId>janino</artifactId>
+			<version>2.7.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+
 		<!-- spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${org.springframework-version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
 		<!-- for Test -->
 		<dependency>
