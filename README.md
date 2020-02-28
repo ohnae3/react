@@ -4,7 +4,8 @@
 
 #### environments
 
-- jdk10 or higher
+- jdk 10 or higher
 - maven
 - spring 5.2.4(java config base)
+- tomcat 9
 - react.js 16.13.0

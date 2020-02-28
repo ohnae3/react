@@ -1,4 +1,4 @@
-package react.serverside.spring.config;
+package react.serverside.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScan.Filter;

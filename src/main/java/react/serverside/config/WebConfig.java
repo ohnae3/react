@@ -1,4 +1,4 @@
-package react.serverside.spring.config;
+package react.serverside.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc // Spring MVC 활성화
-@ComponentScan("react.serverside") // component-scan 범위 지정
+@ComponentScan(basePackages = "react.serverside") // component-scan 범위 지정
 public class WebConfig implements WebMvcConfigurer {
 	/**
 	 * viewResolver 설정

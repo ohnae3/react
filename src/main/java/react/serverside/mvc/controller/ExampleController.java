@@ -1,4 +1,4 @@
-package react.serverside.spring.mvc.controller;
+package react.serverside.mvc.controller;
 
 import javax.servlet.http.HttpSession;
 

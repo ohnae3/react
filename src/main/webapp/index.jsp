@@ -20,7 +20,8 @@
 		<h4>리액트</h4>
 		<ul>
 			<li><a href="/react/simpledemo">심플이즈베스트데모</a></li>
-			<li><a href="/??">??</a></li>
+			<li><a href="/react.do">/react.do</a></li>
+			<li><a href="react/readSample.do">/react/readSample.do</a></li>
 		</ul>
 	</li>
 </ul>
