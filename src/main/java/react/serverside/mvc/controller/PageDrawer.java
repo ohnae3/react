@@ -13,9 +13,8 @@ public class PageDrawer {
 
 	private PageDrawer() {}
 
-	@GetMapping("/react")
-	public ModelAndView a(ModelAndView model) {
-		model.setViewName("react/test");
+	@GetMapping("/react/test")
+	public ModelAndView test(ModelAndView model) {
 		return model;
 	}
 }

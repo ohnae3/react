@@ -33,14 +33,25 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>3.0.0</version>
-<!-- 				<configuration> -->
-<!-- 					<warSourceDirectory>WebContent</warSourceDirectory> -->
-<!-- 				</configuration> -->
+				<version>3.2.3</version>
+				<configuration>
+					<warSourceDirectory>src/main/webapp</warSourceDirectory>
+					<!-- <warSourceExcludes>api/**, css/**, error/**, guide/**, js/**, img/**, pub/**, pub/**, template/**</warSourceExcludes> -->
+					<webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- 원격 저장소 설정 -->
+	<repositories>
+		<repository>
+			<id>Datanucleus</id>
+			<url>http://www.datanucleus.org/downloads/maven2/</url>
+		</repository>
+	</repositories>
 
 	<!-- 라이브러리 설정 -->
 	<dependencies>
