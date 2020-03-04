@@ -10,27 +10,27 @@
 - tomcat 9
 - react.js 16.13.0
 
-
-## coding guide
+## 코딩 가이드
 
 ### example
 
 #### 파일 읽어서 json으로 응답
 
 ```java
-	@GetMapping(path = "/react/readSample", produces = "application/json")
-	public Map<String, Object> readSample(HttpServletResponse resp) throws IOException {
-		HashMap<String, Object> json = jsonConverter.readValue(new ClassPathResource("data/sample.json").getFile(), new TypeReference<HashMap<String, Object>>() {});
-		logger.debug("{}", json);
-		return json;
-	}
+@GetMapping(path = "/react/readSample", produces = "application/json")
+public Map<String, Object> readSample(HttpServletResponse resp) throws IOException {
+	HashMap<String, Object> json = jsonConverter.readValue(new ClassPathResource("data/sample.json").getFile(), 
+			new TypeReference<HashMap<String, Object>>() {});
+	logger.debug("{}", json);
+	return json;
+}
 ```
 
 #### react/test.jsp 응답
 
 ```java
-	@GetMapping("/react/test")
-	public ModelAndView test(ModelAndView model) {
-		return model;
-	}
+@GetMapping("/react/test")
+public ModelAndView test(ModelAndView model) {
+	return model;
+}
 ```

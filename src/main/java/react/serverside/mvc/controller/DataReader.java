@@ -19,7 +19,7 @@ import react.serverside.support.ObjectMapperFactory;
 
 @Controller
 public class DataReader {
-	@SuppressWarnings("unused")
+//	@SuppressWarnings("unused")
 	private static final Logger logger = LoggerFactory.getLogger(DataReader.class);
 
 	ObjectMapper jsonConverter = ObjectMapperFactory.getMapper();
