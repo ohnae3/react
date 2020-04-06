@@ -14,8 +14,8 @@ public class ExampleController {
 
 	private ExampleController() {}
 
-//	@RequestMapping(path = "/example/draw-example.do", method = RequestMethod.GET)
-	@GetMapping("/example/draw-example.do")
+//	@RequestMapping(path = "/example/example.do", method = RequestMethod.GET)
+	@GetMapping("/example/example.do")
 	public ModelAndView drawExample(ModelAndView mv) {
 		
 		logger.debug("잘 들어 오는군?");
@@ -32,7 +32,7 @@ public class ExampleController {
 		
 		session.setAttribute("a", 123);
 		int a = (int) session.getAttribute("a");
-		logger.info(String.valueOf(a == 123));
+		logger.info("{}", a == 123);
 		
 		session.invalidate(); // 세션 무효화
 		

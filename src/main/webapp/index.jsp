@@ -12,7 +12,7 @@
 	<li>
 		<h4>Spring</h4>
 		<ul>
-			<li><a href="/example/draw-example.do">JSP forwarding test test</a></li>
+			<li><a href="/example/example.do">JSP forwarding test test</a></li>
 			<li><a href="/example/session-invalidate-test.do">session invalidate test</a></li>
 		</ul>
 	</li>
