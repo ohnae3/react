@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class PageDrawer {
+public class Painter {
 	@SuppressWarnings("unused")
-	private static final Logger logger = LoggerFactory.getLogger(PageDrawer.class);
+	private static final Logger logger = LoggerFactory.getLogger(Painter.class);
 
-	private PageDrawer() {}
+	private Painter() {}
 
 	@GetMapping("/react/test")
 	public ModelAndView test(ModelAndView model) {

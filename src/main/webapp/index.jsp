@@ -6,8 +6,8 @@
 <title>index</title>
 </head>
 <body>
-<h1>SPRING-MVC LAB</h1>
-<h2>Index</h2>
+<h1>React.js with Spring</h1>
+<h2>index</h2>
 <ul>
 	<li>
 		<h4>Spring</h4>
