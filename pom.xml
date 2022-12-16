@@ -13,7 +13,7 @@
 		<java-version>10</java-version>
 		<project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
-		<org.springframework-version>5.2.4.RELEASE</org.springframework-version>
+		<org.springframework-version>5.2.20.RELEASE</org.springframework-version>
 		<fasterxml.jackson-version>2.10.2</fasterxml.jackson-version>
 		<org.aspectj-version>1.8.0</org.aspectj-version>
 		<org.slf4j-version>1.7.21</org.slf4j-version>
